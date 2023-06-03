@@ -1,0 +1,4 @@
+outs:
+- md5: 4ebfe31d169b41c23ff7ecada88674c0
+  size: 351473
+  path: cat_regr_best_model.pkl

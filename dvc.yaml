@@ -1,0 +1,18 @@
+stages:
+  splitting_a_dataset_into_train_and_test:
+    cmd: dvc/data
+    deps:
+    - dvc/data/Ethos_Dataset_Binary.csv
+    outs:
+    - dvc/data/train.csv
+    - dvc/data/test.csv
+  training_model:
+    cmd: dvc/model_params
+    outs:
+    - dvc/model_params/baseline_model_params.json
+    - dvc/model_params/cat_regr_best_model_params.json
+  saving_model:
+    cmd: dvc/models
+    outs:
+    - dvc/models/cat_regr_baseline_model.pkl
+    - dvc/models/cat_regr_best_model.pkl

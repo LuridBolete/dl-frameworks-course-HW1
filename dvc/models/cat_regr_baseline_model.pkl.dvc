@@ -1,0 +1,4 @@
+outs:
+- md5: a9ea564ad856d6dc973a60a93597cc7e
+  size: 454027
+  path: cat_regr_baseline_model.pkl
